@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tags Html para JavaScript</title>
+
+   <link rel="stylesheet" href="C:\css/javascript.css">
+
+</head>
+<body>
+   <h1>Tags Html para JavaScipt</h1>
+   
+   <h2>A tag &lt;script></h2>
+
+   <p>Em HTML, o código JavaScript é inserido entre as tags <mark>&lt;script> e. &lt;/script></mark></p>
+   <pre>
+   Exemplo
+   <mark>&lt;script></mark>
+      document.getElementById("<mark>demo</mark>").innerHTML = "<mark>My First JavaScript</mark>";
+   <mark>&lt;/script></mark>
+   </pre>
+   <hr>
+
+   <p>Antigos exemplos de JavaScript podem usar um atributo type: <strong>&lt;script</strong> <mark>type="text/javascript"</mark>>.</p>
+
+   <p>O atributo type não é obrigatório. JavaScript é a linguagem de script padrão em HTML.</p>
+   <hr>
+
+   <h2>Funções e Eventos JavaScript</h2>
+
+   <p>Um JavaScript <mark>function</mark> é um bloco de código JavaScript, que pode ser executado quando "chamado".</p>
+   
+   <p>Por exemplo, uma função pode ser chamada quando ocorre um <strong>evento, como quando o usuário clica em um botão</strong>.</p>
+   <hr>
+
+   <h2>JavaScript na &lt;head> ou &lt;body></h2>
+
+   <p>Você pode colocar qualquer número de scripts em um documento HTML.</p>
+   
+   <p>Os scripts podem ser colocados no <mark>&lt;body></mark>, ou na <mark>&lt;head></mark> seção de uma página HTML, ou em ambos.</p>
+   <hr>
+
+   <h2>JavaScript em &lt;head>&lt;/body>
+
+   <p>Neste exemplo, um JavaScript <mark>function</mark> é colocado na &lt;<mark>head</mark>>seção de uma página HTML.</p>
+   
+   <p>A função é invocada (chamada) quando um botão é clicado:</p>
+   <pre>
+   Exemplo
+   <mark>&lt;!DOCTYPE html></mark>
+   <mark>&lt;html></mark>
+   <mark>&lt;head></mark>
+   &lt;<mark>script</mark>>
+   
+   function myFunction() {
+      document.getElementById("<mark>demo</mark>").innerHTML = "<mark>Paragraph changed.</mark>";
+   }
+
+   &lt;/<mark>script</mark>>
+   <mark>&lt;/head</mark>>
+   <mark>&lt;/body</mark>>
+      <strong>&lt;!--Seu codigo html coloque aqui.--></strong>
+   <mark>&lt;/body>
+   <mark>&lt;/html>
+   </pre>
+   <hr>
+
+   <h2>Demo JavaScript in Head</h2>
+   <pre>
+   &lt;<mark>p id</mark>="demo">A Paragraph&lt;<mark>/p</mark>>
+   &lt;<mark>button type</mark>="button" <mark>onclick</mark>="<mark>myFunction()</mark>">Try it&lt;<mark>/button</mark>>
+    </pre>
+   <hr>
+
+   <h2>JavaScript em &lt;body></h2>
+
+   <p>Neste exemplo, um JavaScript <mark>function</mark> é colocado na &lt;<mark>body</mark>>seção de uma página HTML.</p>
+   
+   <p>A f&lt;<mark></mark>função é invocada (chamada) quando um botão é clicado:</p>
+   <pre>
+   &lt;<mark>!DOCTYPE html</mark>>
+   &lt;<mark>html</mark>>
+   &lt;<mark>body</mark>>
+
+   &lt;<mark>h2</mark>Demo JavaScript in Body&lt;<mark>/h2></mark>
+   &lt;<mark>p</mark> id="demo">A Paragraph&gt;&lt;<mark>/p></mark>
+   &lt;<mark>button</mark> type="button" onclick="myFunction()">Try it&lt;<mark>/button></mark>>
+
+   &lt;<mark>script</mark>>
+      function myFunction() {
+         document.getElementById("demo").innerHTML = "Paragraph changed.";
+      }
+   &lt;<mark>/script</mark>>
+
+   &lt;<mark>/body</mark>>
+   &lt;<mark>/html</mark>>
+   </pre>
+   
+   <p>Colocar scripts na parte inferior do elemento &lt;<mark>body</mark>> melhora a velocidade de exibição, porque a interpretação do script torna a exibição mais lenta.</p>
+   <hr>
+
+   <h2>JavaScript externo</h2>
+
+   <p>Os scripts também podem ser colocados em arquivos externos:</p>
+   <pre>
+   Arquivo externo: myScript.js
+   function myFunction() {
+      document.getElementById("<mark>demo</mark>").innerHTML = "<mark>Paragraph changed</mark>.";
+   }
+   </pre>
+
+   <p>Os scripts externos são práticos quando o mesmo código é usado em várias páginas da Web diferentes.</p>
+   
+   <p>Os arquivos JavaScript têm a extensão de arquivo <mark>.js</mark>.</p>
+   
+   <p>Para usar um script externo, coloque o nome do arquivo do script no (src) <mark>atributo (source)</mark> de uma tag &lt;<mark>script</mark>>: </p>
+   <pre>
+   Exemplo
+   &lt;<mark>script</mark> src="<mark>myScript.js</mark>">&lt;/<mark>script</mark>>
+   </pre>
+
+   <p>Você pode colocar uma referência de script externo &lt;<mark>head</mark>> ou &lt;<mark>body</mark>> como quiser.</p>
+   
+   <p>O script se comportará como se estivesse localizado exatamente onde a tag &lt;<mark>script</mark>> está localizada.</p>
+   
+   <p>Os scripts externos não podem conter tags &lt;<mark>script</mark>>.</p>
+   <hr>
+
+   <h2>Vantagens externas do JavaScript</h2>
+
+   <p>Colocar scripts em arquivos externos tem algumas vantagens:</p>
+
+   <h3>Separa HTML e código</h3>
+
+   <p>Torna o HTML e o JavaScript mais fáceis de ler e manter <br> 
+   Arquivos JavaScript em cache podem acelerar o carregamento de páginas <br>
+   Para adicionar vários arquivos de script a uma página - use várias tags de script:</p>
+   <pre>
+   Exemplo
+   &lt;<mark>script</mark> src="<mark>myScript1.js</mark>">&lt;/<mark>script</mark>>
+   &lt;<mark>script</mark> src="<mark>myScript2.js</mark>">&lt;/<mark>script</mark>>
+   </pre>
+   <hr>
+
+   <h2>Referências Externas</h2>
+
+   <p>Um script externo pode ser referenciado de 3 maneiras diferentes:</p>
+   <pre>
+   Com um URL completo (um endereço da Web completo)
+      Exemplo
+      &lt;<mark>script</mark> src="<strong>//www.w3schools.com/js/myScript.js</strong>">&lt;<mark>/script</mark>>
+      Este exemplo usa um URL completa para vincular a <em>myScript.js</em>
+   
+   Com um caminho de arquivo (como /js/)   
+      Exemplo
+      &lt;<mark>script</mark> src="<strong>/js/myScript.js</strong>">&lt;<mark>/script</mark>>
+      Este exemplo usa um caminho de arquivo para vincular a <em>myScript.js</em>
+   
+   Sem nenhum caminho
+      Exemplo
+      &lt;<mark>script</mark> src="<strong>myScript.js</strong>">&lt;<mark>/script</mark>>
+      Este exemplo não usa nenhum caminho para vincular a <em>myScript.js</em> 
+   </pre>
+   <hr>
+   
+</body>
+</html>
