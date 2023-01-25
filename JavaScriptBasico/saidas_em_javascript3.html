@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Saidas em JavaScript</title>
+   
+   <link rel="stylesheet" href="C:\css/javascript.css">
+</head>
+<body>
+   <h1>Saidas em JavaScript</h1>
+   
+   <h2>Possibilidades de exibição de JavaScript</h2>
+
+   <p>O JavaScript pode "exibir" dados de diferentes maneiras:</p>
+   <pre>
+      Gravando em um elemento HTML, usando <mark>.innerHTML</mark>
+      Gravando na saída HTML usando o <mark>.document.write()</mark>
+      Gravando em uma caixa de alerta, usando o <mark>.window.alert()</mark>
+      Gravando no console do navegador, usando o <mark>.console.log()</mark>
+   </pre>
+   <hr>
+
+   <h2>Usando innerHTML</h2>
+   <p>Para acessar um elemento HTML, o JavaScript pode usar o método. <mark>document.getElementById(id)</mark></p>
+   
+   <p>O atributo define o elemento HTML. A propriedade define o conteúdo HTML: <mark>.innerHTML</mark></p>
+   <pre>
+   Exemplo
+   &lt;<mark>script</mark>>
+      document.getElementById("demo").<mark>innerHTML</mark> = 5 + 6;
+   &lt;/<mark>script</mark>>
+   </pre>
+
+   <p>Alterando a propriedade innerHTML de um elemento HTML é uma maneira comum de exibir dados em HTML.</p>
+   <hr>
+
+   <h2>Usando document.write()</h2>
+
+   <p>Para fins de teste, é conveniente usar: <mark>document.write()</mark>
+   <pre>
+   Exemplo
+   &lt;<mark>script</mark>>
+      document.write(5 + 6);
+   &lt;/<mark>script</mark>>
+   </pre>
+
+   <p> O uso de document.write() depois que um documento HTML for carregado, excluirá todo o HTML:</p>
+   
+   <p>O método document.write() só deve ser usado para teste.</p>
+   <hr>
+
+   <h2>Usando window.alert()</h2>
+
+   <p>Você pode usar uma caixa de alerta para exibir dados:</p>
+   <pre>
+   Exemplo
+   &lt;<mark>script></mark>
+      window.alert("valor = " + (5 + 6) );
+   &lt;/<mark>script></mark>
+   </pre>
+
+   <p>Você pode pular a palavra-chave. <mark>window</mark></p>
+   
+   <p>Em JavaScript, o objeto window é o objeto de escopo global. <br>
+      Isso significa que variáveis, propriedades e métodos, por padrão, pertencem ao objeto window. <br> Isso também significa que especificar a palavra-chave é opcional: <mark>window</mark></p>
+   <pre>
+   Exemplo
+   &lt;<mark>script</mark>>
+      alert(5 + 6);
+   &lt;/<mark>script</mark>>
+   </pre>
+   <hr>
+
+   <h2>Usando console.log()</h2>
+
+   <p>Para fins de depuração, você pode chamar o método no navegador para exibir dados. <mark>console.log()</mark></p>
+   <pre>
+   Exemplo
+   &lt;<mark>script</mark>>
+      console.log(5 + 6);
+   &lt;/<mark>script></mark>
+   </pre>
+   <hr>
+
+   <h2>Impressão JavaScript</h2>
+
+   <p>JavaScript não tem nenhum objeto de impressão ou métodos de impressão.</p>
+   
+   <p>Não é possível acessar dispositivos de saída a partir do JavaScript.</p>
+   
+   <p>A única exceção é que você pode chamar o método <mark>window.print()</mark> <br> no navegador para imprimir o conteúdo da janela atual. </p>
+   <pre>
+   Exemplo
+   &lt;button onclick="<mark>window.print()</mark>">Print esta página"&lt;/button>
+   </pre>
+   <hr>
+   
+</body>
+</html>
