@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Comentários</title>
+
+   <link rel="stylesheet" href="C:\css/javascript.css">
+   
+</head>
+<body>
+      <h1>Comentários JavaScript</h1>
+
+   <p>Os comentários JavaScript podem ser usados para explicar o código JavaScript e torná-lo mais legível.</p>
+
+   <p>Os comentários do JavaScript também podem ser usados para impedir a execução, ao testar o código alternativo.</p>
+   <hr>
+
+   <h2>Comentários de linha única</h2>
+
+   <p>Os comentários de linha única começam com  <mark>//</mark>.</p>
+
+   <p>Qualquer texto entre  <mark>//</mark> e no final da linha será ignorado pelo JavaScript (não será executado).</p>
+
+   <p>Este exemplo usa um comentário de uma única linha antes de cada linha de código:</p>
+   <pre>
+   Exemplo
+      <mark>//</mark> Change heading:
+      document.getElementById("<mark>myH</mark>").innerHTML = "<mark>My First Page</mark>";
+   </pre>
+   <hr>
+
+   <pre>
+      <mark>//</mark> Change paragraph:
+      document.getElementById("<mark>myH</mark>").innerHTML = "<mark>My First Page</mark>";
+   </pre>
+   <hr>
+
+   <p>Este exemplo usa um comentário de linha única no final de cada linha para explicar o código:</p>
+   <pre>
+   Exemplo
+      let x = 5;      <mark>//</mark> Declare x, give it the value of 5
+      let y = x + 2;  <mark>//</mark> Declare y, give it the value of x + 2
+   </pre>
+   <hr>
+   
+   <h2>Comentários de várias linhas</h2>
+
+   <p>Os comentários de várias linhas começam com <mark>/*</mark> e terminam com <mark>*/</mark>.</p>
+
+   <p>Qualquer texto entre <mark>/* e */</mark> á ignorado pelo JavaScript.</p>
+
+   <p>Este exemplo usa um comentário de várias linhas (um bloco de comentários) para explicar o código:</p>
+   <pre>
+   Exemplo
+      <mark>/*</mark>
+         The code below will change
+         the heading with id = "<mark>myH</mark>"
+         and the paragraph with id = "<mark>myP</mark>"
+         in my web page:
+      <mark>*/</mark>
+      document.getElementById("<mark>myH</mark>").innerHTML = "<mark>My First Page</mark>";
+      document.getElementById("<mark>myP</mark>").innerHTML = "<mark>My First paragraph</mark>";
+   </pre>
+   <hr>
+
+   <p>É mais comum usar comentários de linha única.</p>
+
+   <p>Os comentários em bloco costumam ser usados para documentação formal.</p>
+   <hr>
+
+   <h2>Usando comentários para impedir a execução</h2>
+
+   <p>O uso de comentários para impedir a execução do código é adequado para teste de código.</p>
+
+   <p>Adicionar <mark>//</mark> a frente de uma linha de código altera as <br> linhas de código de uma linha executável para um comentário.</p>
+
+   <p>Este exemplo usa <mark>//</mark> para impedir a execução de uma das linhas de código:</p>
+   <pre>
+   Exemplo
+      <mark>//</mark> document.getElementById("<mark>myH</mark>").innerHTML = "<mark>My First Page</mark>";
+      document.getElementById("<mark>myH</mark>").innerHTML = "<mark>My First paragraph</mark>";
+   </pre>
+   <hr>
+
+   <p>Este exemplo usa um bloco de comentário para impedir a execução de várias linhas:</p>
+   <pre>
+   Exemplo
+      <mark>/*</mark>
+         document.getElementById("<mark>myH</mark>").innerHTML = "<mark>My First Page</mark>";
+         document.getElementById("<mark>myH</mark>").innerHTML = "<mark>My First paragraph</mark>";
+      <mark>*/</mark>
+   </pre>
+   <hr>
+
+</body>
+</html>
