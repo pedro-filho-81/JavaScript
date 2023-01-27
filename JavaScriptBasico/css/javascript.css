@@ -1,0 +1,23 @@
+   body {
+      background-color: rgb(61, 61, 226);
+      color: white;
+   }
+   h1 {
+      text-align: center;
+   }
+   p {
+      font-size: 15pt;
+   }
+   pre {
+      background-color: rgb(226, 221, 214);
+      color: blue;
+      font-size: 13pt;
+   }
+   strong {
+      background-color: white;
+      color: black;
+   }
+   mark {
+      background-color: rgb(255, 255, 255);
+      color: red;
+   }
