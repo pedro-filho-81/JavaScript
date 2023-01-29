@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exercícios Operadores Aritiméticos</title>
+   
+   <!--
+      link para incluir o programa CSS/javascript.css  
+   -->
+   <link rel="stylesheet" href="C:\css/javascript.css">
+
+   <script src="./operadores_aritimeticos.js"></script>
+
+   <!--<head> ... <script type="text/javascript" src="scripts/meu_script.js"></script> </head>-->
+
+   <style>      
+      p{
+         background-color: antiquewhite;
+         color:black;
+         text-align: center;
+      }
+   </style>
+
+</head>
+<body>
+   <h1>Exercicios com Operadores Aritiméticos</h1>
+
+   <p>Dado os valores let n1 = 8 e let n2 = 4;</p>
+   
+      <p id="adicao">Adição</p>
+      <p id="subtrair">Subtração</p>
+      <p id="multiplicar">multiplicar</p>
+      <p id="divisao">Divisao</p>
+      <p id="resto">resto</p>
+      <p id="expoente">expoente</p>
+
+   <script>      
+      // variáveis
+      let n1 = 8;
+      let n2 = 4;
+      let soma = n1 + n2;
+
+      let sub= n1 - n2; 
+      let mult = n1 * n2
+      let div = n1 / n2;
+      let resto = n1 % n2;
+      let expoente = n1 ** n2;
+
+      // altere o valor do ai
+      document.getElementById("adicao").innerHTML = `A soma entre ${n1} + ${n2} = ${soma} `;
+
+      document.getElementById("subtrair").innerHTML = `Subtração de ${n1} - ${n2} = ${sub}`;
+
+      document.getElementById("multiplicar").innerHTML = `O produto de ${n1} * ${n2} = ${mult}`;
+
+      document.getElementById("divisao").innerHTML = `A divisão de ${n1} / ${n2} = ${div} `;
+
+      document.getElementById("resto").innerHTML = `O resto da  divisão de ${n1} % ${n2} = ${resto} `;
+      
+      document.getElementById("expoente").innerHTML = `Potenciação de ${n1} ** ${n2} = ${expoente} `;
+   </script>
+
+</body>
+</html>
