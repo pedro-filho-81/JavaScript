@@ -6,13 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Exemplo Operadores de Atribuição</title>
    <link rel="stylesheet" href="javascript.css">
-   <style>
-      p {
-         text-align: center;
-         background-color: antiquewhite;
-         color: black;
-      }
-   </style>
+   
 </head>
 <body>
    <h1>Exemplo Operadores de Atribuição</h1>
@@ -26,7 +20,9 @@
    <p id="multi"></p>
    <p id="multi2"></p>
    <p id="divide"></p>
+   <p id="divide2"></p>
    <p id="resto"></p>
+   <p id="resto2"></p>
 
    <script>
       // variáveis
@@ -50,6 +46,12 @@
       document.getElementById("multi2").innerHTML = "igual vale <mark>=</mark> " + (igual * 5)+ " // igual vale 13 * 5";
       igual *= 5;
 
+      document.getElementById("divide").innerHTML = "igual <mark>/=</mark> 2; // igual divide por 2";
+
+      document.getElementById("divide2").innerHTML = "igual vale <mark>=</mark> " + (igual / 2) + " // igual / 2";
+
+      document.getElementById("resto").innerHTML = "resto %= 2" + (65 % 2);
    </script>
+
 </body>
 </html>
