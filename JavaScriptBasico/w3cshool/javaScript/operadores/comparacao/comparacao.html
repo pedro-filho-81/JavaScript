@@ -144,7 +144,7 @@
       
       <h2>O operador NÃO é idêntico a <mark>!==</mark></h2>
 
-      <p>O operador <mark>!==</mark> compara os valores para saber se NÃO são idênticos a, <br>ou seja, valor1 NÃO é idêntico ao valor2? (valor e tipo): <br>Se sim retorna true, se não retorna false.</p>
+      <p>O operador <mark>!==</mark> compara os valores para saber se NÃO é idênticos a, <br>ou seja, se o valor1 NÃO é idêntico ao valor2? (valor e tipo): <br>retorna verdadeiro; Se for idêntico retorna falso.</p>
 
       <p>Atribua 5 a variável x, exiba <strong>true ou false</strong> com base <br>nos valores e no tipo da variável da comparação:</p>
 
@@ -182,6 +182,118 @@
                x NÃO é idêntico a 8: <mark>true</mark>
                x NÃO é idêntico a 5: <mark>false</mark>
                x NÃO é idêntico a string 5: <mark>true</mark>
+      </pre>
+      <hr>
+
+      <h2>O operador maior que <mark> > </mark></h2>
+
+      <p>O operador maior que <mark> > </mark> compara os valores para saber <br>se o valor1 é maior que o valor2? se for então,<br>retorna verdadeiro; caso contrário retorna falso.</p>
+
+      <p>Atribua 5 a variável x, e exiba <strong>true ou false</strong> <br>com base nos valores da comparação:</p>
+
+      <p><strong>let x <mark>=</mark> 5</strong>; cria uma variável do tipo inteiro.</p>
+
+      <pre>
+      &lt;body> <code>// aqui html</code>
+         &lt;!--O parágrafo com o (id="demo") vai ser alterado pelo JavaScript-->
+         &lt;p id="<mark>demo</mark>">&lt;/p>
+
+         &lt;script> <code>// aqui javascript dentro do HTml</code>
+            let x = 5; // declara variável do tipo inteiro
+
+            // aqui a comparação é entre dois valores diferentes e do mesmo tipo.
+            // 5 é maior que 8
+            <strong>document.getElementById("<mark>demo</mark>").innerHTML = ("x é maior que 8?" + (x > <mark>8</mark>);</strong> 
+            // resultado falso
+
+         &lt;/script>
+         &lt;/body>
+            <mark>Saída:</mark>
+               x é maior que 8: <mark>false</mark>
+      </pre>
+      <hr>
+
+      <h2>O operador menor que <mark> &lt; </mark></h2>
+
+      <p>O operador menor que <mark> &lt; </mark> compara os valores para saber <br>se o valor1 é menor que o valor2? se for então,<br>retorna verdadeiro; caso contrário retorna falso.</p>
+
+      <p>Atribua 5 a variável x, e exiba <strong>true ou false</strong> <br>com base nos valores da comparação:</p>
+
+      <p><strong>let x <mark>=</mark> 5</strong>; cria uma variável do tipo inteiro.</p>
+
+      <pre>
+      &lt;body> <code>// aqui html</code>
+         &lt;!--O parágrafo com o (id="demo") vai ser alterado pelo JavaScript-->
+         &lt;p id="<mark>demo</mark>">&lt;/p>
+
+         &lt;script> <code>// aqui javascript dentro do HTml</code>
+            let x = 5; // declara variável do tipo inteiro
+
+            // aqui a comparação é entre dois valores diferentes e do mesmo tipo.
+            // 5 é menor que 8
+            <strong>document.getElementById("<mark>demo</mark>").innerHTML = ("x é menor que 8?" + (x &lt; <mark>8</mark>);</strong> 
+            // resultado verdadeiro
+
+         &lt;/script>
+         &lt;/body>
+            <mark>Saída:</mark>
+               x é menor que 8: <mark>true</mark>
+      </pre>
+      <hr>
+
+      <h2>O operador maior ou igual <mark> >= </mark></h2>
+
+      <p>O operador maior ou igual <mark> >= </mark> compara os valores para saber <br>se o valor1 é maior ou igual ao valor2? se for então,<br>retorna verdadeiro; caso contrário retorna falso.</p>
+
+      <p>Atribua 5 a variável x, e exiba <strong>true ou false</strong> <br>com base nos valores da comparação:</p>
+
+      <p><strong>let x <mark>=</mark> 5</strong>; cria uma variável do tipo inteiro.</p>
+
+      <pre>
+      &lt;body> <code>// aqui html</code>
+         &lt;!--O parágrafo com o (id="demo") vai ser alterado pelo JavaScript-->
+         &lt;p id="<mark>demo</mark>">&lt;/p>
+
+         &lt;script> <code>// aqui javascript dentro do HTml</code>
+            let x = 5; // declara variável do tipo inteiro
+
+            // aqui a comparação é entre dois valores diferentes e do mesmo tipo.
+            // 5 é maior ou igual a 8
+            <strong>document.getElementById("<mark>demo</mark>").innerHTML = ("x é maior ou igual a 8?" + (x >= <mark>8</mark>);</strong> 
+            // resultado falso
+
+         &lt;/script>
+         &lt;/body>
+            <mark>Saída:</mark>
+               x é maior ou igual a 8: <mark>false</mark>
+      </pre>
+      <hr>
+
+      <h2>O operador menor ou igual <mark> &lt;= </mark></h2>
+
+      <p>O operador menor ou igual <mark> &lt;= </mark> compara os valores para saber <br>se o valor1 é menor ou igual ao valor2? se for então,<br>retorna verdadeiro; caso contrário retorna falso.</p>
+
+      <p>Atribua 5 a variável x, e exiba <strong>true ou false</strong> <br>com base nos valores da comparação:</p>
+
+      <p><strong>let x <mark>=</mark> 5</strong>; cria uma variável do tipo inteiro.</p>
+
+      <pre>
+      &lt;body> <code>// aqui html</code>
+         &lt;!--O parágrafo com o (id="demo") vai ser alterado pelo JavaScript-->
+         &lt;p id="<mark>demo</mark>">&lt;/p>
+
+         &lt;script> <code>// aqui javascript dentro do HTml</code>
+            let x = 5; // declara variável do tipo inteiro
+
+            // aqui a comparação é entre dois valores diferentes e do mesmo tipo.
+            // 5 é menor ou igual a 8
+            <strong>document.getElementById("<mark>demo</mark>").innerHTML = ("x é menor ou igual a 8?" + (x &lt;= <mark>8</mark>);</strong> 
+            // resultado verdadeiro
+
+         &lt;/script>
+         &lt;/body>
+            <mark>Saída:</mark>
+               x é menor ou igual a 8: <mark>true</mark>
       </pre>
       <hr>
 
