@@ -14,11 +14,23 @@
 
    <p>Esta página contém alguns exemplos do que o JavaScript pode fazer.</p>
 
+   <h2>Por que estudar JavaScript?</h2>
+
+   <p>JavaScript é uma das <strong>3 linguagens que</strong> todos os desenvolvedores web devem aprender:</p>
+   <pre>
+   1. <strong>HTML</strong> para definir o conteúdo das páginas web
+   
+   2. <strong>CSS</strong> para especificar o layout das páginas da web
+   
+   3. <strong>JavaScript</strong> para programar o comportamento de páginas da web
+   </pre>
+   <hr>
+
    <h2>JavaScript pode alterar o conteúdo HTML</h2>
 
    <p>Um dos muitos métodos HTML JavaScript é <mark>.getElementById()</mark></p>
 
-   <p>A instrução abaixo "localiza" um elemento HTML <mark>id="demo"</mark>, <br> e altera o conteúdo do elemento <mark>innerHTML</mark> para <mark>"Olá, JavaScript!":</mark></p>
+   <p>A instrução abaixo "localiza" um elemento HTML com o <mark>id="demo"</mark>, <br> e altera o conteúdo do elemento <mark>innerHTML</mark> para <mark>"Olá, JavaScript!":</mark></p>
    <pre>
    Exemplo
    &lt;!DOCTYPE html>
@@ -28,11 +40,14 @@
 
       &lt;p <mark>id="demo</mark>">JavaScript pode mudar o conteúdo HTML.&lt;/p>
 
-      &lt;button type="button" onclick='document.<strong>getElementById</strong>("<mark>demo</mark>").
+      // cria um botão que quando clicado 
+      // faz a alteração do parágrafo que tem
+      // o ID="demo".
+      &lt;button type="button" onclick='<strong>document.getElementById</strong>("<mark>demo</mark>").
       <strong>innerHTML</strong> = "<mark>Olá, JavaScript!</mark>"'>
       Click Me!&lt;/button>
-   &lt;/body>
-   &lt;/html>
+   &lt;/<mark>body</mark>>
+   &lt;/<mark>html</mark>>
    </pre>
    <hr>
    
@@ -40,8 +55,12 @@
    <p>Neste exemplo, as duas instruções são válidas.</p>
    <pre>
    Exemplo
-   document.getElementById(<mark>'demo'</mark>).innerHTML = <mark>'Hello JavaScript'</mark>;
-   document.getElementById(<mark>"demo"</mark>).innerHTML = <mark>"Hello JavaScript"</mark>;
+   <strong>document.getElementById(<mark>'demo'</mark>).innerHTML</strong> = <mark>'Hello JavaScript'</mark>;
+   
+   <strong>document.getElementById(<mark>"demo"</mark>).innerHTML</strong> = <mark>"Hello JavaScript"</mark>;
+   /*
+      <code>A instrução acima diz:</code> no documento obtenha do elemento <br>      que está identificado pelo <mark>Id demo</mark> no Html e atribua a ele  <br>      o que está entre <mark>aspas</mark> (duplas ou simplas).
+   */
    </pre>
    <hr>
    
@@ -53,13 +72,21 @@
    <mark>&lt;img</mark> id="myImage" <mark>src="pic_bulboff.gif"</mark> style="width:100px">
    </pre>
 
-
    <h2>JavaScript pode alterar estilos HTML (CSS)</h2>
 
    <p>Alterar o estilo de um elemento HTML é uma variante da alteração de um atributo:</p>
    <pre>
-   Exemplo
-   document.getElementById("demo").<mark>style.fontSize = "35px"</mark>;
+   &lt;body>
+      &lt;p <mark>id="demo</mark>">JavaScript pode mudar o estilo de um elemento HTML.&lt;/p>
+      
+      // cria um botão que quando clicado 
+      // faz a alteração do parágrafo que tem
+      // o ID="demo".
+      &lt;button type="button" onclick="<strong>document.getElementById('<mark>demo</mark>').style.fontSize='<mark>35px</mark>'"</strong>>
+      Click Me!&lt;/button>
+   &lt;/body>
+      <mark>Saída</mark> (com a frase no tamanho 35px)
+      JavaScript pode mudar o estilo de um elemento HTML
    </pre>
    <hr>
 
@@ -67,11 +94,45 @@
 
    <p>Para ocultar ou mostrar o elemento HTML podemos alterando o <mark>estilo: display</mark></p>
    <pre>
-   instrução para ocultar
-   document.getElementById("demo").<mark>style.display</mark> = "none";
+      &lt;!DOCTYPE html>
+      &lt;html>
+      &lt;body>
+         &lt;p <mark>id="demo"</mark>>JavaScript pode ocultar elementos HTML.&lt;/p>
+         
+         instrução para ocultar
+         <strong>document.getElementBy<mark>Id("demo")</mark>.style.display = "<mark>none</mark>"</strong>;
 
-   instrução para mostrar
-   document.getElementById("demo").<mark>style.display</mark> = "block";
+         // cria um botão que quando clicado 
+         // faz a alteração do parágrafo que tem
+         // o ID="demo".
+         &lt;button type="button" onclick="<strong>document.getElementBy<mark>Id('demo')</mark>.style.display='<mark>none</mark>'</strong>">
+         Click Me!&lt;/button>
+      &lt;/body>
+      &lt;/html> 
+      </pre>
+      <hr>
+
+      <h2>JavaScript pode mostrar elementos HTML</h2>
+
+      <p>Mostrar elementos HTML ocultos também pode ser feito alterando o estilo: <mark>display</mark></p>
+      <pre>
+      &lt;!DOCTYPE html>
+      &lt;html>
+      &lt;body>
+
+      &lt;p <mark>id="demo"</mark> style="display:none">Hello JavaScript!&lt;/p>
+
+      instrução para mostrar
+      <strong>document.getElementBy<mark>Id("demo")</mark>.style.display = "<mark>block</mark>"</strong>;
+
+      // cria um botão que quando clicado 
+      // faz a alteração do parágrafo que tem
+      // o ID="demo".
+      &lt;button type="button" onclick="<strong>document.getElementBy<mark>Id('demo')</mark>.style.display='<mark>block</mark>'</strong>">
+      Click Me!&lt;/button>
+
+      &lt;/body>
+      &lt;/html> 
    </pre>
    <hr>
 
