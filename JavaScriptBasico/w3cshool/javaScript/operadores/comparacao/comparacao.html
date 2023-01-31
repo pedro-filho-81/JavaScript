@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Operadores de Comparação</title>
+   <link rel="stylesheet" href="javascript.css">
+</head>
+<body>
+   <h1>Operadores de Comparação</h1>
+
+   <p>O operador de comparação compara os dois operandos.</p>
+   <p>Os operadores de comparação são os seguintes:</p>
+   <pre>
+   Operador	         Descrição   	      Exemplo
+   ==	                        É igual a	         10==20 = falso
+   ===	            Idêntico (igual e do mesmo tipo)	10==20 = falso
+   !=	               Não é igual a	      10!=20 = verdadeiro
+   !==	            Não idêntico	      20!==20 = falso
+   >	               Maior que	         20>10 = verdadeiro
+   >=	               Maior ou igual a	   20>=10 = verdadeiro
+   &lt;	            Menos de	            20 &lt; 10 = falso
+   &lt;=	            Menor ou igual a	   20&lt;=10 = falso
+   </pre>
+   <hr>
+
+   <h2>O operador é igual a <mark>==</mark></h2>
+
+   <p>O operador <mark>==</mark> compara se um valor é igual ao outro:</p>
+
+   <p>Atribua 5 a variável x, exiba <strong>true ou false</strong> com base <br>nos valores e no tipo da variável da comparação:</p>
+
+   <p><strong>let x <mark>=</mark> 5</strong>; cria uma variável do tipo inteiro.</p>
+
+   <pre>
+      &lt;body> <code>// aqui html</code>
+      &lt;!--Os parágrafos com o (id="demo") vão ser alterados pelo JavaScript-->
+      &lt;p id="<mark>demo</mark>">&lt;/p>
+      &lt;p id="<mark>demo2</mark>">&lt;/p>
+      &lt;p id="<mark>demo3</mark>">&lt;/p>
+
+      &lt;script> <code>// aqui javascript dentro do HTml</code>
+      
+         let x = 5; // declara variável do tipo inteiro
+
+         // aqui a comparação é entre valores diferentes e do mesmo tipo.
+         <strong>document.getElementById("<mark>demo</mark>").innerHTML = ("x é igual a 8 ?" + (x == <mark>8</mark>);</strong>
+
+         // aqui a comparação é entre valores iguais e do mesmo tipo.
+         <strong>document.getElementById("<mark>demo2</mark>").innerHTML = ("x é igual a 5? " + (x == <mark>5</mark>);</strong>
+
+         // aqui a comparação é entre um inteiro e uma string
+         // o operador <mark>==</mark> compara valores e não o tipo da variável.
+         // o valor 5 inteiros é igual a 5 string resultado verdadeiro, são iguais.
+         <strong>document.getElementById("<mark>demo3</mark>").innerHTML = ("x é igual a string 5? " + (x == <mark>"5"</mark>);</strong>
+
+         &lt;/script>
+      &lt;/body>
+      <mark>Saída:</mark>
+            x é igual a 8: <mark>false</mark>
+            x é igual a 5: <mark>true</mark>
+            x é igual a string 5: <mark>true</mark>
+      </pre>
+      <hr>
+
+      <h2>O operador NÃO é igual a <mark>!=</mark></h2>
+
+      <p>O operador <mark>!=</mark> compara se um valor NÃO é igual ao outro:</p>
+   
+      <p>Atribua 5 a variável x, exiba <strong>true ou false</strong> com base <br>nos valores da variável da comparação:</p>
+   
+      <p><strong>let x <mark>=</mark> 5</strong>; cria uma variável do tipo inteiro.</p>
+   
+      <pre>
+      &lt;body> <code>// aqui html</code>
+      &lt;!--Os parágrafos com o (id="demo") vão ser alterados pelo JavaScript-->
+      &lt;p id="<mark>demo</mark>">&lt;/p>
+      &lt;p id="<mark>demo2</mark>">&lt;/p>
+      &lt;p id="<mark>demo3</mark>">&lt;/p>
+
+      &lt;script> <code>// aqui javascript dentro do HTml</code>
+      
+         let x = 5; // declara variável do tipo inteiro
+
+         // aqui a comparação é entre valores diferentes e do mesmo tipo.
+         <strong>document.getElementById("<mark>demo</mark>").innerHTML = ("x NÃO é igual ao inteiro 8 ?" + (x != <mark>8</mark>);</strong> // verdadeiro
+
+         // aqui a comparação é entre valores iguais e do mesmo tipo.
+         <strong>document.getElementById("<mark>demo2</mark>").innerHTML = ("x NÃO é igual ao inteiro 5? " + (x != <mark>5</mark>);</strong> // falso
+
+         // aqui a comparação é entre um inteiro e uma string
+         // o operador <mark>!=</mark> compara valores e não o tipo da variável.
+         // o valor 5 inteiros NÃO é igual a 5 string resultado falso, eles são iguais.
+         // lembrando <strong>( != )</strong> compara apenas os valores.
+         <strong>document.getElementById("<mark>demo3</mark>").innerHTML = ("x NÃO é igual a string 5? " + (x != <mark>"5"</mark>);</strong> // falso
+
+         &lt;/script>
+      &lt;/body>
+      <mark>Saída:</mark>
+            x NÃO é igual ao inteiro 8: <mark>true</mark>
+            x NÃO é igual ao inteiro 5: <mark>false</mark>
+            x NÃO é igual a string 5: <mark>false</mark>
+      </pre>
+      <hr>
+            
+      <h2>O operador é idêntico a <mark>===</mark></h2>
+
+      <p>O operador <mark>===</mark> compara os valores para saber se são idênticos, <br>ou seja, valor1 é idêntico ao valor2? (valor e tipo): <br>Se sim retorna true, se não retorna false.</p>
+
+      <p>Atribua 5 a variável x, exiba <strong>true ou false</strong> com base <br>nos valores e no tipo da variável da comparação:</p>
+
+      <p><strong>let x <mark>=</mark> 5</strong>; cria uma variável do tipo inteiro.</p>
+
+      <pre>
+      &lt;body> <code>// aqui html</code>
+         &lt;!--Os parágrafos com o (id="demo") vão ser alterados pelo JavaScript-->
+         &lt;p id="<mark>demo</mark>">&lt;/p>
+         &lt;p id="<mark>demo2</mark>">&lt;/p>
+         &lt;p id="<mark>demo3</mark>">&lt;/p>
+
+         &lt;script> <code>// aqui javascript dentro do HTml</code>
+            let x = 5; // declara variável do tipo inteiro
+
+            // aqui a comparação é entre dois valores diferentes e do mesmo tipo.
+            <strong>document.getElementById("<mark>demo</mark>").innerHTML = ("x é idêntico a 8 ?" + (x === <mark>8</mark>);</strong>
+
+            // aqui a comparação é entre dois valores iguais e do mesmo tipo.
+            <strong>document.getElementById("<mark>demo2</mark>").innerHTML = ("x é idêntico a 5? " + (x === <mark>5</mark>);</strong>
+
+            // aqui a comparação é entre um valor inteiro e uma string
+            // o operador <mark>===</mark> compara o valor e  tipo da variável.
+            // o valor 5 inteiros é idêntico a 5 string resultado é false, Não são idênticos.
+            <strong>document.getElementById("<mark>demo3</mark>").innerHTML = ("x é idêntico a string 5? " + (x === <mark>"5"</mark>);</strong>
+
+         &lt;/script>
+         &lt;/body>
+            <mark>Saída:</mark>
+               x é idêntico a 8: <mark>false</mark>
+               x é idêntico a 5: <mark>true</mark>
+               x é idêntico a string 5: <mark>false</mark>
+      </pre>
+      <hr>
+      
+      <h2>O operador NÃO é idêntico a <mark>!==</mark></h2>
+
+      <p>O operador <mark>!==</mark> compara os valores para saber se NÃO são idênticos a, <br>ou seja, valor1 NÃO é idêntico ao valor2? (valor e tipo): <br>Se sim retorna true, se não retorna false.</p>
+
+      <p>Atribua 5 a variável x, exiba <strong>true ou false</strong> com base <br>nos valores e no tipo da variável da comparação:</p>
+
+      <p><strong>let x <mark>=</mark> 5</strong>; cria uma variável do tipo inteiro.</p>
+
+      <pre>
+      &lt;body> <code>// aqui html</code>
+         &lt;!--Os parágrafos com o (id="demo") vão ser alterados pelo JavaScript-->
+         &lt;p id="<mark>demo</mark>">&lt;/p>
+         &lt;p id="<mark>demo2</mark>">&lt;/p>
+         &lt;p id="<mark>demo3</mark>">&lt;/p>
+
+         &lt;script> <code>// aqui javascript dentro do HTml</code>
+            let x = 5; // declara variável do tipo inteiro
+
+            // aqui a comparação é entre dois valores diferentes e do mesmo tipo.
+            // 5 NÃO é idêntico a 8
+            <strong>document.getElementById("<mark>demo</mark>").innerHTML = ("x NÃO é idêntico a 8 ?" + (x !== <mark>8</mark>);</strong> 
+            // resultado verdadeiro
+
+            // aqui a comparação é entre dois valores iguais e do mesmo tipo.
+            // 5 NÃO é idêntico a 5
+            <strong>document.getElementById("<mark>demo2</mark>").innerHTML = ("x NÃO é idêntico a 5? " + (x !== <mark>5</mark>);</strong> 
+            // resultado falso
+
+            // aqui a comparação é entre um valor inteiro e uma string
+            // o operador <mark>!==</mark> compara o valor e  tipo da variável.
+            // o valor 5 inteiros NÃO é idêntico a string 5.
+            <strong>document.getElementById("<mark>demo3</mark>").innerHTML = ("x é idêntico a string 5? " + (x !== <mark>"5"</mark>);</strong> 
+            // resultado verdadeiro
+
+         &lt;/script>
+         &lt;/body>
+            <mark>Saída:</mark>
+               x NÃO é idêntico a 8: <mark>true</mark>
+               x NÃO é idêntico a 5: <mark>false</mark>
+               x NÃO é idêntico a string 5: <mark>true</mark>
+      </pre>
+      <hr>
+
+</body>
+</html>
