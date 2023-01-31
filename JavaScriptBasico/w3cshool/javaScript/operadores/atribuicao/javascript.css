@@ -1,5 +1,5 @@
 
-body {
+   body {
       background-color: rgb(61, 61, 226);
       color: white;
    }
@@ -9,6 +9,8 @@ body {
    p {
       font-family: Arial;
       font-size: 15pt;
+      background-color: yellow;
+      color: black;
    }
    pre {
       background-color: rgb(226, 221, 214);
