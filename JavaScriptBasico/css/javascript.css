@@ -1,17 +1,24 @@
+   /*
+      CSS alterado em 29/01/2023
+   */
    body {
       background-color: rgb(61, 61, 226);
       color: white;
    }
-   h1 {
+   h1, h2 {
       text-align: center;
    }
    p {
+      font-family: Arial;
       font-size: 15pt;
+      background-color: yellow;
+      color: black;
    }
    pre {
       background-color: rgb(226, 221, 214);
       color: blue;
-      font-size: 13pt;
+      font-size: 15pt;
+      font-family: 'Arial';
    }
    strong {
       background-color: white;
@@ -21,3 +28,4 @@
       background-color: rgb(255, 255, 255);
       color: red;
    }
+   
