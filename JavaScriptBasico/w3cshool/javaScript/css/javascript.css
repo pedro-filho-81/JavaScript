@@ -28,4 +28,11 @@
       background-color: yellow;
       color: black;
    }
-   
+   table, th, td {
+      background-color: antiquewhite;
+      color: black;
+      text-align: left;
+      font-size: 15pt;
+      width: 50%;
+      border: 2px solid black;
+   }
