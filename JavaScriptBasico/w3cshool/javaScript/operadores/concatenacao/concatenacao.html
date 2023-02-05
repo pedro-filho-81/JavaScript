@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Operador de Concatenação ( + )</title>
+   <link rel="stylesheet" href="javascript.css">
+</head>
+<body>
+   <h1>Operador de Concatenação <mark>( + )</mark></h1>
+   
+   <p>O operador <mark>( + )</mark> também pode ser usado para adicionar (concatenar) cadeias de caracteres.</p>
+   <pre>
+      &lt;body>
+      &lt;p>O perador ( + ) concatena (adiciona, une) cadeias de caracteres.&lt;/p>
+      &lt;p <mark>id="demo"</mark>>&lt;/p> // (id demo) será substituido pelo texto3 do javascript
+
+      &lt;<mark>script</mark>>
+      let texto1 = "Pedro";
+      let texto2 = "Filho";
+      let texto3 = texto1 + " " + texto2;
+      <strong>document.getElementBy<mark>Id("demo")</mark>.innerHTML = <mark>texto3</mark> ;</strong>
+      &lt;/<mark>script</mark>>
+      &lt;/body>
+
+      <mark>Saída:</mark>
+         O operador + concatena (adiciona, une) cadeia de caracteres.
+         <code>Pedro Filho</code> &lt;= é resultado da concatenação de <mark>texto1 + " " + texto2</mark>.
+   </pre>
+   <hr>
+
+   <p>O operador de atribuição <mark>( += )</mark> também pode ser usado para adicionar (concatenar) cadeias de caracteres:</p>
+   <pre>
+      &lt;body>
+      &lt;p>O perador de atribuição ( += ) pode concatenar cadeias de caracteres.&lt;/p>
+      &lt;p <mark>id="demo"</mark>>&lt;/p> // (id demo) será substituido pelo texto1 do javascript
+
+      &lt;<mark>script</mark>>
+      var texto1 = "Estou fazendo esse ";
+      texto1 += "exercício no sábado.";
+      <strong>document.getElementBy<mark>Id("demo")</mark>.innerHTML = <mark>texto1</mark>;</strong>
+      &lt;/<mark>script</mark>>
+      &lt;/body>
+
+      <mark>Saída:</mark>
+         O perador de atribuição ( += ) pode concatenar cadeias de caracteres.
+         Estou fazendo esse exercício no sábado.
+   </pre>
+   <hr>
+   
+   <p>Quando usado em cadeias de caracteres, o operador <mark>( + )</mark> é chamado de operador de concatenação.</p>
+
+   <p>Se você adicionar um número e uma cadeia de caracteres, o resultado será uma cadeia de caracteres!</p>
+   <pre>
+      &lt;body>
+      &lt;p>O perador aritimético ( + ) concatena (adiciona, une) cadeias de caracteres.&lt;/p>
+      &lt;p <mark>id="demo"</mark>>&lt;/p> // (id demo) será substituido pelo texto3 do javascript
+
+      &lt;<mark>script</mark>>
+      let texto1 = "Pedro";
+      let texto2 = 123456;
+      let texto3 = texto1 + " " + texto2;
+      <strong>document.getElementBy<mark>Id("demo")</mark>.innerHTML = <mark>texto3</mark> ;</strong>
+      &lt;/<mark>script</mark>>
+      &lt;/body>
+
+      <mark>Saída:</mark>
+         O operador aritimético + concatena (adiciona, une) cadeia de caracteres.
+         <code>Pedro 123456</code> &lt;= é resultado da concatenação de <mark>texto1 + " " + texto2</mark>.
+   </pre>
+   <hr>
+
+</body>
+</html>
