@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <title>Operador Ternário ( ?: )</title>
+   <link rel="stylesheet" href="javascript.css">
+</head>
+<body>
+   <h1>O Operador Ternário <mark>( ?: )</mark></h1>
+   
+   <p>O operador condicional ternário <mark>( ?: )</mark> que atribui um valor a uma variável com base em alguma condição.</p>
+   <pre>
+      Sintaxe
+      nome da variável = (condição) ? valor1 : valor2;
+   </pre>
+
+   <p>Se a variável idade for um valor inferior a 18, o valor <br> da variável votável será "Muito jovem", caso contrário, <br> o valor do votável será "Velho o suficiente".</p>
+   <pre>
+      &lt;html>
+      &lt;body>
+         &lt;p>Entre com sua idade e clica no botão:&lt;/p >
+         
+         &lt;input <mark>id="idade"</mark> valor="<mark>18</mark>" /> entrada de dados do usuário
+         
+         após clicar no botão que chama função myFunction javascript
+         &lt;button onclick="myFunction()">Esperimente&lt;/button>
+
+         &lt;p <mark>id="demo"</mark>>&lt;/p>
+
+         &lt;<mark>script</mark>>
+         function myFunction() {
+            let idade = <strong>document.getElementBy<mark>Id("idade")</mark>.valloe;</strong>
+            
+            let votar = (idade &lt; 18) <mark> ? </mark> "muito jovem "<mark> : </mark>"Já pode ";
+            
+            <strong>document.getElementBy<mark>Id("demo")</mark>.innerHTML = <mark>votar + " para votar"</mark>;</strong>
+         } final da função
+         &lt;/<mark>script</mark>>
+      &lt;/body>
+      &lt;/html>
+   </pre>
+   <hr>
+
+</body>
+</html>
