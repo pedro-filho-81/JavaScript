@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt=br">
+<html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,10 +13,10 @@
    <h1>Instruções JavaScript</h1>
    <pre>   
    Exemplo
-   let x, y, z;    // Statement 1
-   x = 5;          // Statement 2
-   y = 6;          // Statement 3
-   z = x + y;      // Statement 4
+   let x, y, z;    // instrução 1
+   x = 5;          // instrução 2
+   y = 6;          // instrução 3
+   z = x + y;    // instrução 4
    </pre>
    <hr>
 
@@ -37,21 +37,21 @@
 
    Valores, Operadores, Expressões, Palavras-chave, e Comentários.</p>
 
-   <P>Esta declaração diz ao navegador para escrever "Olá Dolly". dentro de um elemento HTML com id="demo":</P>
+   <P>Esta declaração diz ao navegador para escrever "<mark>Olá Dolly</mark>". dentro de um elemento HTML com <mark>id="demo"</mark></P>
 
    <pre>
    Exemplo
-   document.getElementById("demo").innerHTML = "Hello Dolly.";
+   <strong>document.getElementById("<mark>demo</mark>").innerHTML = "<mark>Hello Dolly</mark>";</strong>
    </pre>
    
    <p>A maioria dos programas JavaScript contêm muitas instruções JavaScript.</p>
 
-   <p>As instruções são executadas, uma a uma, no mesma ordem em que estão escritos.</p>
+   <p>As instruções são executadas, uma a uma, na mesma ordem em que estão escritos.</p>
 
    <p>Programas JavaScript (e instruções JavaScript) são frequentemente chamados de código JavaScript.</p>
    <hr>
    
-   <h2>Ponto e virgula (;)</h2>
+   <h2>Ponto e virgula <mark>( ; )</mark></h2>
 
    <p>Os ponto-e-vírgula separam as instruções JavaScript.</p>
 
@@ -59,23 +59,22 @@
    
    <pre>
    Exemplos
-   let a, b, c;  // Declare 3 variables
-   a = 5;        // Assign the value 5 to a
-   b = 6;        // Assign the value 6 to b
-   c = a + b;    // Assign the sum of a and b to c
+   let a, b, c;  // Declara 3 variables
+   a = 5;        // a recebe 5
+   b = 6;        // b recebe 6
+   c = a + b;    // c recebe a + b
    </pre>
 
    <p>Quando separados por ponto-e-vírgula, várias instruções em uma linha são permitidas: a = 5; b = 6; c = a + b;</p>
 
    <p>Na Web, você pode ver exemplos sem ponto-e-vírgula.</p>
 
-   <p>Terminar instruções com ponto-e-vírgula não é necessário, <br> mas altamente recomendado.</p>
+   <p>Terminar instruções com <strong>ponto-e-vírgula</strong> não é necessário, <br> mas <strong>altamente recomendado</strong>.</p>
    <hr>
 
    <h2>Espaço em branco JavaScript</h2>
 
    <p>O JavaScript ignora vários espaços. Você pode adicionar <br> espaço em branco ao seu script para torná-lo mais legível.</p>
-
    <pre>
    As seguintes linhas são equivalentes:
 
@@ -97,14 +96,14 @@
    
    <pre>
    Exemplo
-   document.getElementById("demo").innerHTML =
-   "Hello Dolly!";
+   <strong>document.getElementById("<mark>demo</mark>").innerHTML =
+               "<mark>Hello Dolly</mark>";</strong>
    </pre>
    <hr>
    
-   <p>Blocos de código JavaScript</p>
+   <h2>Blocos de código JavaScript</h2>
 
-   <p> As instruções JavaScript podem ser agrupadas em blocos de código, dentro de curly colchetes {...}.</p>
+   <p> As instruções JavaScript podem ser agrupadas em blocos de código, dentro de chaves <mark>{ seu código...}</mark>.</p>
 
    <p>O objetivo dos blocos de código é definir instruções a serem executadas em conjunto.</p>
 
@@ -112,46 +111,69 @@
    <pre>
    Exemplo
    function myFunction() {
-   document.getElementById("demo1").innerHTML = "Hello Dolly!";
-   document.getElementById("demo2").innerHTML = "How are you?";
+      <strong>document.getElementById("<mark>demo</mark>").innerHTML = "<mark>Hello Dolly</mark>";</strong>
+      <strong>document.getElementById("<mark>demo</mark>").innerHTML = "<mark>Como vai você?</mark>";</strong>
    }
    </pre>
    <hr>
 
    <h2>Palavras-chave JavaScript</h2>
 
-   <p>As instruções JavaScript geralmente começam com uma palavra-chave para identificar a ação JavaScript a ser executada.</p>
+   <p>As instruções JavaScript geralmente começam com uma palavra-chave <br>para identificar a ação JavaScript a ser executada.</p>
 
-   <p>Aqui está uma lista de algumas das palavras-chave do JavaScript:</p>
+   <p>Aqui está uma lista com algumas das palavras-chave do JavaScript:</p>
 
-   <table>
+   <table> <!-- início das tabelas -->
+      <!--
+         caption = legenda, título;
+         table = tabela;
+         tr = table row = linha da tabela
+         th = tabel header = cabeçalho da tabela
+         td = table data = dados da tabela
+      -->
+      <caption>Algumas palavras-chave</caption>
    <tr>
       <th>Palavra-chave</th>
       <th>Descrição</th>
    </tr>
    <tr>
-      <td><mark>var</mark></td>
+      <td>var</td>
       <td>Declara uma variável</td>
    </tr>
-
    <tr>
-      <td><mark>let</mark></td>
+      <td>let</td>
       <td>Declara uma variável de bloco</td>
    </tr>
-   
-   <mark>const</mark>   
-   Declara uma constante de bloco
-   
-   <mark>if</mark>	   
-   Marca um bloco de instruções a serem executadas em uma condição
+   <tr>
+      <td>const</td>
+      <td>Declara uma constante de bloco</td>
+   </tr>
+   <tr>
+      <td>if</td>
+      <td>Marca um bloco de instruções a serem executadas em uma condição</td>
+   </tr>
+   <tr>
+     <td>switch</td>  
+     <td>Marca um bloco de instruções a serem executadas em diferentes casos</td>
+   </tr>
+   <tr>
+     <td>for</td>
+     <td>Marca um bloco de instruções a serem executadas em um loop</td>
+   </tr>
+   <tr>
+      <td>function</td>
+      <td>Declara uma função</td>
+   </tr>
+   <tr>
+      <td>return</td>
+      <td>Sai de uma função</td>
+   </tr>
+   <tr>
+      <td>try</td>
+      <td>Implementa o tratamento de erros em um bloco de instruções.</td>
+   </tr>
    </table>
-
-   switch  Marca um bloco de instruções a serem executadas em diferentes casos
-   for	   Marca um bloco de instruções a serem executadas em um loop
-   function	Declara uma função
-   return	Sai de uma função
-   try	  Implementa o tratamento de erros em um bloco de instruções.
-
+   
    <p>Palavras-chave JavaScript são palavras reservadas.</p>
 
    <p>Palavras reservadas não podem ser usadas como nomes para variáveis.</p>
