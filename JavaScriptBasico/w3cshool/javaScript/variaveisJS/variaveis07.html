@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Variáveis JavaScript</title>
+
+   <!--
+      link para incluir o programa CSS/javascript.css  
+   -->
+   <link rel="stylesheet" href="C:\css/javascript.css">
+
+</head>
+<body>
+   <h1>Variáveis JavaScript</h1>
+   
+   <p>4 maneiras de declarar uma variável JavaScript:</p>
+   <pre>
+      Usando <mark>var</mark>
+      Usando <mark>let</mark>
+      Usando <mark>const</mark>
+      Usando <mark>null</mark>
+   </pre>
+   <hr>
+
+   <h2>O que são Variáveis?</h2>
+
+   <p>As variáveis são contêineres para armazenar dados (armazenar valores de dados).</p>
+
+   <p>Neste exemplo, <mark>x, y e z</mark>, são variáveis, declaradas com a palavra-chave: <mark>var</mark></p>
+   <pre>
+   Exemplo
+   <mark>var</mark> x = 5;
+   <mark>var</mark> y = 6;
+   <mark>var</mark> z = x + y;
+   </pre>
+   <hr>
+
+   <p>Neste exemplo, <mark>x, y e z</mark>, são variáveis, declaradas com a palavra-chave: <mark>let</mark></p>
+   <pre>
+   Exemplo
+   <mark>let</mark> x = 5;
+   <mark>let</mark> y = 6;
+   <mark>let</mark> z = x + y;
+   </pre>
+   <hr>
+
+   <p>Neste exemplo, <mark>x, y e z</mark>, são variáveis não declaradas:</p>
+   <pre>
+   Exemplo
+      x = 5;
+      y = 6;
+      z = x + y;
+   </pre>
+   <hr>
+
+   <p>De todos os exemplos acima, você pode adivinhar:</p>
+   <pre>
+      x armazena o valor 5
+      y armazena o valor 6
+      z armazena o valor 11
+   </pre>
+   <hr>
+
+   <h2>Quando usar JavaScript var?</h2>
+
+   <p>Sempre declare variáveis JavaScript com <mark>var, let ou const</mark>.</p>
+
+   <p>A palavra-chave <mark>var</mark> é usada em todo o código JavaScript de 1995 a 2015.</p>
+
+   <p>As palavras-chave <mark>let</mark> e <mark>const</mark> foram adicionadas ao JavaScript em 2015.</p>
+
+   <p>Se você deseja que seu código seja executado em navegadores mais antigos, você deve usar <mark>var</mark>.</p>
+   <hr>
+
+   <h2>Quando usar JavaScript const?</h2>
+
+   <p>Se você quer uma regra geral: sempre declare variáveis com <mark>const</mark>.</p>
+
+   <p>Se você acha que o valor da variável pode mudar, use <mark>let</mark>.</p>
+
+   <p>Neste exemplo, <mark>price1, price2, e total</mark>, são variáveis:</p>
+   <pre>
+   Exemplo
+   <mark>const</mark> price1 = 5;
+   <mark>const</mark> price2 = 6;
+   <mark>let</mark> total = price1 + price2;
+   </pre>
+   <hr>
+
+   <p>As duas variáveis price1 e price2 são declaradas com a palavra-chave <mark>const</mark>.</p>
+ 
+   <p>A variável total é declarada com a palavra-chave <mark>let</mark>.</p>
+
+   <p>Este é um valor que pode ser alterado.</p>
+   <hr>
+
+   <p>Assim como na álgebra, as variáveis contêm valores:</p>
+   <pre>
+      <mark>let</mark> x = 5;
+      <mark>let</mark> y = 6;
+   </pre>
+   <hr>
+
+   <p>Assim como na álgebra, as variáveis são usadas em expressões:</p>
+   <pre>
+      <mark>let</mark> z = x + y;
+   </pre>
+
+   <p>A partir do exemplo acima, você pode imaginar que o total é calculado como 11.</p>
+   <pre>
+   Observação
+      Variáveis são recipientes para armazenar valores.
+   </pre>
+   <hr>
+
+   <h2>Identificadores JavaScript</h2>
+
+   <p>Todas as <strong>variáveis</strong> JavaScript devem ser <strong>identificadas</strong> com <strong>nomes exclusivos</strong>.</p>
+
+   <p>Esses nomes exclusivos são chamados <strong>de identificadores</strong>.</p>
+
+   <p>Os identificadores podem ser nomes curtos (como x e y) ou nomes mais descritivos (age, sum, totalVolume).</p>
+
+   <p>As regras gerais para a construção de nomes para variáveis (identificadores exclusivos) são:</p>
+   <pre>
+      Os nomes podem conter letras, dígitos, 
+         sublinhados e cifrões.
+      Os nomes devem começar com uma letra.
+      Os nomes também podem começar com $ e _ 
+         (mas não o usaremos neste tutorial).
+      Os nomes diferenciam maiúsculas de minúsculas 
+         (y e Y são variáveis diferentes).
+      Palavras reservadas JavaScript não podem ser 
+         usadas como nomes.
+      
+      <mark>Observação</mark>
+         Os identificadores JavaScript diferenciam 
+            maiúsculas de minúsculas.
+   </pre>
+   <hr>
+
+   <h2>O operador de atribuição</h2>
+
+   <p>Em JavaScript, o sinal de igual <mark> = </mark> é um operador de "atribuição", não um operador "igual a".</p>
+
+   <p>Isso é diferente da álgebra. O seguinte não faz sentido em álgebra:</p>
+   <pre>
+   x = x + 5
+   </pre>
+
+   <p>Em JavaScript, porém, faz todo o sentido: atribui o valor de x + 5 a x.</p>
+
+   <p>(Ele calcula o valor de x + 5 e coloca o resultado em x. O valor de x é incrementado em 5.)</p>
+
+   <mark>Observação</mark> <br>
+   <p>O operador "igual a" é escrito como ==em JavaScript.</p>
+
+   <h2>Tipos de Dados JavaScript</h2>
+
+   <p>As variáveis JavaScript podem conter números como 100 e valores de texto como <mark>"Jonh Doe"</mark>.
+
+   <p>Na programação, os valores de texto são chamados de strings de texto.</p>
+
+   <p>O JavaScript pode lidar com muitos tipos de dados, mas, por enquanto, pense apenas em números e strings.</p>
+
+   <p>Strings são escritas entre aspas duplas ou simples. Os números são escritos sem aspas.</p>
+
+   <p>Se você colocar um número entre aspas, ele será tratado como uma string de texto.</p>
+   <pre>
+   Exemplo
+   <mark>const</mark> pi = 3.14;
+   <mark>let</mark> person = "John Doe";
+   <mark>let</mark> answer = 'Yes I am!';
+   </pre>
+   <hr>
+
+   <h2>Declarando uma Variável JavaScript</h2>
+
+   <p>Criar uma variável em JavaScript é chamado de "<mark>declarar</mark>" uma variável.</p>
+
+   <p>Você <mark>declara</mark> uma variável JavaScript com a palavra-chave <mark>var</mark> ou a <mark>let</mark>:</p>
+   <pre>
+   <mark>var</mark> carName;
+   
+   ou:
+   
+   <mark>let</mark> carName;
+   </pre>
+
+   <p>Após a declaração, a variável não tem valor (tecnicamente é <mark>undefined</mark>).</p>
+
+   <p>Para <strong>atribuir</strong> um valor à variável, use o sinal de igual:</p>
+   <pre>
+   carName <mark> = </mark> "Volvo";
+   </pre>
+
+   <p>Você também pode atribuir um valor à variável ao declará-la:</p>
+   <pre>
+      <mark>let</mark> carName = "<mark>Volvo</mark>";
+   </pre>
+
+   <p>No exemplo abaixo, criamos uma variável chamada <mark>carName</mark> e atribuímos a ela o valor "Volvo".</p>
+
+   <p>Em seguida, "exibimos" o valor dentro de um parágrafo HTML com id="demo":</p>
+   <pre>
+   Exemplo
+   &lt;p id="<mark>demo</mark>">
+
+   &lt;script>
+   <mark>let</mark> carName = "<mark>Volvo</mark>";
+   document.getElementById("<mark>demo</mark>").innerHTML = <mark>carName</mark>;
+   &lt;/script>
+
+   <mark>Observação</mark>
+   É uma boa prática de programação declarar todas as 
+   variáveis no início de um script.
+   </pre>
+   <hr>
+
+   <h2>Uma declaração, muitas variáveis</h2>
+
+   <P>Você pode declarar muitas variáveis tem uma instrução.</P>
+
+   <p>Inicie a instrução com <mark>let</mark> e separe as variáveis por <strong>vírgula</strong>: <mark>let</mark></p>
+   <pre>
+   Exemplo
+   <mark>let</mark> person = "John Doe", carName = "Volvo", price = 200;
+   Uma declaração pode abranger várias linhas:
+   <hr>
+   Exemplo
+   <mark>let</mark> person = "<mark>"John Doe"</mark>,
+   carName = "Volvo",
+   price = 200;
+   </pre>
+   <hr>
+
+   <h2>Valor = indefinido</h2>
+
+   <p>Em programas de computador, as variáveis geralmente são declaradas sem um valor. <br>O valor pode ser algo que deve ser calculado ou algo que será <br> fornecido posteriormente, como entrada do usuário.</p>
+
+   <p>Uma variável declarada sem valor terá o valor <mark>undefined</mark>.</p>
+
+   <p>A variável carName terá o valor <mark>undefined</mark> após a execução desta instrução:</p>
+   <pre>
+   Exemplo
+   <mark>let</mark> carName;
+   </pre>
+   <hr>
+
+   <h2>Re-declarando variáveis JavaScript</h2>
+
+   <p>Se você declarar novamente uma variável JavaScript declarada com <mark>var</mark>, ela não perderá seu valor.</p>
+
+   <p>A variável <mark>carName</mark> ainda terá o valor "<mark>Volvo</mark>" após a execução destas instruções:</p>
+   <pre>
+   Exemplo
+   <mark>var</mark> carName = "<mark>Volvo</mark>";
+   <mark>var</mark> carName;
+
+   <mark>Observação</mark>
+   Você não pode declarar novamente uma variável declarada com <mark>let</mark> ou <mark>const</mark>.
+   </pre>
+   <hr>
+
+   <h2>Isso não vai funcionar:</h2>
+   <pre>
+   <mark>let</mark> carName = "<mark>Volvo</mark>";
+   <mark>let</mark> carName;
+   </pre>
+   <hr>
+   
+   <h2>JavaScript Aritmética</h2>
+
+   <p>Assim como na álgebra, você pode fazer aritmética com variáveis, usando operadores como <mark> = </mark> e <mark> + </mark>:
+   <pre>
+   Exemplo
+   <mark>let</mark> x = 5 + 2 + 3;
+   </pre>
+   <hr>
+
+   <p>Você também pode adicionar strings, mas as strings serão concatenadas:</p>
+   <pre>
+   Exemplo
+   <mark>let</mark> x = "John" + " " + "Doe";
+   </pre>
+   <hr>
+
+   <p>Tente também isto:</p>
+   <pre>
+   Exemplo
+   <mark>let</mark> x = "5" + 2 + 3;
+
+   <mark>Observação</mark>
+   </pre>
+   <hr>
+
+   <p>Se você colocar um número entre aspas, o resto dos números serão tratados como strings e concatenados.</p>
+   <pre>
+   Agora tente isso:
+   Exemplo
+   <mark>let</mark> x = 2 + 3 + "5";
+   </pre>
+   <hr>
+
+   <h2>Cifrão JavaScript <mark> $ </mark></h2>
+
+   <p> Como o JavaScript trata um cifrão como uma letra, os identificadores contendo <mark> $ </mark> são nomes de variáveis válidos:</p>
+   <pre>
+   Exemplo
+   <mark>let</mark> $ = "Hello World";
+   <mark>let</mark> $$$ = 2;
+   <mark>let</mark> $myMoney = 5;
+   </pre>
+
+   <p>Usar o cifrão não é muito comum em JavaScript, mas os programadores profissionais <br> costumam usá-lo como um alias para a função principal em uma biblioteca JavaScript.</p>
+
+   <p>Na biblioteca JavaScript jQuery, por exemplo, a função principal <mark> $ </mark> é usada <br> para selecionar elementos HTML. Em jQuery <mark> $("p")</mark>;significa <br> "selecionar todos os elementos p".</p>
+   <hr>
+
+   <h2>Sublinhado JavaScript ( _ )</h2>
+
+   <p>Como o JavaScript trata o sublinhado como uma letra, <br> os identificadores contendo _ são nomes de variáveis válidos:</p>
+   <pre>
+   Exemplo
+   <mark>let</mark> _lastName = "Johnson";
+   <mark>let</mark> _x = 2;
+   <mark>let</mark> _100 = 5;
+   </pre>
+
+   <p>O uso do sublinhado não é muito comum em JavaScript, mas uma convenção <br> entre os programadores profissionais é usá-lo como um alias para variáveis <br> "<mark>privadas (ocultas)</mark>".</p>
+   <hr>
+
+</body>
+</html>
