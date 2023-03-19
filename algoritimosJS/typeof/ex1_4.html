@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tipos de Variáveis</title>
+</head>
+<body>
+   <h1>Tipos de Variáveis</h1>
+
+   <p>Como saber os tipos de variáveis com "typeof" .</p>
+
+   <p> // variáveis <br>
+      const fruta = "Banana"; <br>
+      const idade = 40; <br>
+      const preco = 3.50; <br>
+      const levar = true; <br>
+      let novoValor;</p>
+
+   <p>// typeof => exibe resultado no console  <br>
+      console.log("A variável fruta é: " + typeof fruta); // string <br>
+      console.log("A variável preco é: " + typeof preco); // número <br>
+      console.log("A variável idade é: " + typeof preco); // número <br>
+      console.log("A variável levar é: " + typeof levar); // boolean <br>
+      console.log("A variável novoValor é: " + typeof novoValor); //undefined </p>
+   
+   <p>// perguntas <br>
+      console.log("A variável preco é u núero inteiro? " + Number.isInteger(preco)); <br>
+      console.log("A variável idade é u núero inteiro? " + Number.isInteger(idade));</p>
+   
+   <script>
+      // variáveis
+      const fruta = "Banana";
+      const idade = 40;
+      const preco = 3.50;
+      const levar = true;
+      let novoValor;
+
+      // exibe resultado no console
+      console.log("A variável fruta é: " + typeof fruta); // string
+      console.log("A variável preco é: " + typeof preco); // número
+      console.log("A variável idade é: " + typeof preco); // número
+      console.log("A variável levar é: " + typeof levar); // boolean
+      console.log("A variável novoValor é: " + typeof novoValor); //undefined
+
+      // perguntas
+      console.log("A variável preco é u núero inteiro? " + Number.isInteger(preco));
+      console.log("A variável idade é u núero inteiro? " + Number.isInteger(idade));
+
+   </script>
+</body>
+</html>
