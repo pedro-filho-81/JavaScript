@@ -1,0 +1,22 @@
+body {
+   background-color: rgb(48, 48, 216);
+   color: white;
+   font-size: 20px;
+   padding: 12px;
+}
+h1, h2 {
+   text-align: center;
+}
+p {
+   text-align: justify;
+   margin-left: 100pt;
+   margin-right: 100pt;
+   padding: 10pt;
+}
+pre {
+   background-color: white;
+   color: blue;
+   margin-left: 100pt;
+   margin-right: 100pt;
+   padding: 10pt;
+}
