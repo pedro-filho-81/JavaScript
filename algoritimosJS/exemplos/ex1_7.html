@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Valor do Jantar</title>
+
+   <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+   <h1>Calcula Valor do Jantar</h1>
+
+   <p>Programa para calcular o valor de um jantar.</p>
+
+   <p>
+      const jantar = Number(prompt("Informe o valor do jantar: R$ ")); // lê o valor do jantar <br>
+
+      const garcon = jantar * 0.10; //c10% do garçom <br>
+
+      const total = jantar + garcon; // calcula o total da conta <br>
+
+      // exibe o valor da conta
+      <br>
+      alert(`Valor a pagar é de:\njantarR$ ${jantar.toFixed(2).replace('.', ',')} <br>
+      \ngarçon R$ ${garcon.toFixed(2).replace('.', ',')} <br>
+      \nTotal R$ ${total.toFixed(2).replace('.', ',')}`);
+   </p>
+   <script>
+      const jantar = Number(prompt("Informe o valor do jantar: R$ ")); // lê o valor do jantar
+
+      const garcon = jantar * 0.10; //c10% do garçom
+
+      const total = jantar + garcon; // calcula o total da conta
+
+      // exibe o valor da conta
+      alert(`Valor a pagar é de:\njantarR$ ${jantar.toFixed(2).replace('.', ',')}\ngarçon R$ ${garcon.toFixed(2).replace('.', ',')}\nTotal R$ ${total.toFixed(2).replace('.', ',')}`);
+   </script>
+</body>
+</html>
