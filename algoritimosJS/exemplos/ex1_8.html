@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Duração da Viagem</title>
+
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <h1>Duração da Viagem em Horas</h1>
+
+   <p>Elaborar um programa que leia a duração de uma viagem em dias e horas. Calcule e informe a duração total da viagem em número de horas. 
+   <br> 
+   Iepsen, Edécio Fernando. Lógica de Programação e Algoritmos com JavaScript - 2ª Edição (p. 50). Novatec Editora. Edição do Kindle. </p>
+
+   <p>Exemplo de dados de entrada e saída do programa (para uma viagem que dura 2 dias + 5 horas).</p>
+
+   <pre>
+    &lt;script>
+   // variáveis
+   const dias = Number(prompt('Informe os dias viajados: '));
+   const horas = Number(prompt("Informe às horas viajadas 
+   (menor que 24h): "));
+   const total = (dias * 24) + horas;
+
+   // exibe o resultado
+   alert(`Você viajou por:\n${dias} dias
+   \n${horas} horas 
+   \nisso equivale a ${total} horas de viagem.`);
+   </script></pre>
+
+   <script>
+      // variáveis
+      const dias = Number(prompt('Informe os dias viajados: '));
+      const horas = Number(prompt("Informe às horas viajadas (menor que 24h): "));
+      const total = (dias * 24) + horas;
+
+      alert(`Você viajou por:\n${dias} dias\n${horas} horas \nisso equivale a ${total} horas de viagem.`);
+
+   </script>
+</body>
+</html>
