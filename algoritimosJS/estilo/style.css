@@ -1,0 +1,49 @@
+body {
+   background-color: rgb(48, 48, 216);
+   color: white;
+   font-size: 20px;
+   padding: 12px;
+}
+h1, h2 {
+   text-align: center;
+}
+
+h3 {
+   text-align: left;
+   margin-left: 100pt;
+   margin-right: 100pt;
+}
+
+p {
+   text-align: justify;
+   margin-left: 100pt;
+   margin-right: 100pt;
+   padding: 10pt;
+}
+pre {
+   background-color: white;
+   color: blue;
+   margin-left: 100pt;
+   margin-right: 100pt;
+   padding: 10pt;
+}
+
+strong {
+   background-color: white;
+   color: black;
+}
+mark {
+   background-color: white;
+   color: red;
+}
+
+b {
+   background-color: white;
+   color: rgb(203, 39, 215);
+}
+
+button {
+   padding: 10pt;
+   font-size: 18px;
+   border-radius: 20px;
+}
