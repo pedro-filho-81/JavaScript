@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pagamento com Desconto</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <h1>Pagamento com Desconto</h1>
+
+   <p>c - Elaborar um programa para uma loja, o qual leia o preço de um produto e informe as opções de pagamento da loja. Calcule e informe o valor para pagamento à vista com 10% de desconto e o valor em 3x. Exemplo: Preço R$: 60.00 À Vista R$: 54.00 Ou 3x de R$: 20.00 <br>
+   Iepsen, Edécio Fernando. Lógica de Programação e Algoritmos com JavaScript - 2ª Edição (p. 51). Novatec Editora. Edição do Kindle. </p>
+
+   <pre>
+   &lt;<mark>script</mark>>
+   // variáveis
+   // preço recebe o valor do usuário
+   const preco = Number(prompt('Informe o preço do produto R$ '));
+
+   // cálculos
+   const desconto = preco * 0.10; // 10 % de descontos
+   const avista = preco - desconto; // valor com descontos
+   const prestacao = preco / 3; // pagamento a prestação
+
+   // exibe resultado
+   <mark>alert</mark>(`Preço do produto R$ 
+   ${preco.toFixed(2).replace('.', ',')}
+   
+   \nDesconto R$ ${desconto.toFixed(2).replace('.', ',')}
+   
+   \nÀ vista R$ ${avista.toFixed(2).replace('.', ',')}
+   
+   \nOu 3x de R$ ${prestacao.toFixed(2).replace('.', ',')}`); 
+   &lt;<mark>/script</mark>></pre>
+
+   <script>
+      // variáveis
+      // preço recebe o valor do usuário
+      const preco = Number(prompt('Informe o preço do produto R$ '));
+
+      // cálculos
+      const desconto = preco * 0.10; // 10 % de descontos
+      const avista = preco - desconto; // valor à vista co descontos
+      const prestacao = preco / 3; // pagaento a prestação
+
+      // exibe resultado no alert
+      alert(`Preço do produto R$ ${preco.toFixed(2).replace('.', ',')}
+      \nDesconto R$ ${desconto.toFixed(2).replace('.', ',')}
+      \nÀ vista R$ ${avista.toFixed(2).replace('.', ',')}
+      \nOu 3x de R$ ${prestacao.toFixed(2).replace('.', ',')}`);      
+   </script>
+   <hr>
+
+</body>
+</html>
