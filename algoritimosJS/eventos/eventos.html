@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Eventos JavaScript</title>
+
+   <link rel="stylesheet" href="../estilo/style.css">
+
+</head>
+<body>
+   <h1>Eventos JavaScript</h1>
+
+   <p>Pode-se dizer que eventos são ações capazes de disparar uma reação.</p>
+
+   <p>Exemplo do evento <mark>onclick</mark> do elemento button do Html.</p>
+
+   <p>Clique no botão para chamar os métodos alert(), confirm() e prompt().</p>
+
+   <p>Usar eventos como atributos de um elemento HTML, está se misturando camadas de comportamento com a camada de estruturação e isso não é uma prática em conformidade com os Padrões Web.</p>
+
+   <pre>
+      &lt;p>&lt;button type="button" 
+      <mark>onclick=</mark><strong>"alert('Eu sou o método alert()')"</strong>>
+      Alert&lt;/button>
+
+      &lt;button type="button" 
+      <mark>onclick=</mark><strong>"confirm('Eu sou o método confirm, 
+      está gostando?')"</strong>>Confirm&lt;/button>
+   
+      b&lt;utton type="button" 
+      <mark>onclick=</mark><strong>"prompt('Qual seu nome?', 
+      'digite seu nome aqui.')"</strong>>Prompt&lt;/button>&lt;/p></pre>
+
+   <h3>Resultado do Exemplo acima</h3>
+
+   <p><button type="button" onclick="alert('Eu sou o método alert()')">Alert</button>
+   
+   <button type="button" onclick="confirm('Eu sou o método confirm, extá gostando?')">Confirm</button>
+
+   <button type="button" onclick="prompt('Qual seu nome?', 'digite seu nome aqui.')">Prompt</button></p>
+
+</body>
+</html>
