@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Valor por Cliente</title>
+
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <h1>Valor por Cliente</h1>
+
+   <p>Programa para calcular o pagamento da conta e mostrar o valor por clientes. </p>
+
+   <pre> 
+   &lt;script>
+      // variáveis
+      const conta = <mark>Number</mark>(prompt('Informe o valor da conta R$ '));
+      
+      const numClientes = <mark>Number</mark>(prompt('Informe o número de clientes: ') );
+
+      const totPorCli = conta / numClientes;
+
+      // exibe resultado
+      <mark>alert</mark>(`Valor da conta R$ ${conta.toFixed(2).
+         replace('.', ',')}
+      \nNúmero de clientes ${numClientes}
+      \nTotal por cliente R$ ${totPorCli.toFixed(2).
+         replace('.',',')}`);
+   &lt;/script></pre>
+
+   <script>
+      // variáveis
+      const conta = Number(prompt('Informe o valor da conta R$ '));
+      
+      const numClientes = Number(prompt('Informe o número de clientes: ') );
+
+      const totPorCli = conta / numClientes;
+
+      // exibe resultado
+      alert(`Valor da conta R$ ${conta.toFixed(2).replace('.', ',')}\nNúmero de clientes ${numClientes}\nTotal por cliente R$ ${totPorCli.toFixed(2).replace('.',',')}`);
+   </script>
+
+</body>
+</html>
