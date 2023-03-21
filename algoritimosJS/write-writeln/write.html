@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document Write</title>
+
+   <link rel="stylesheet" href="../estilo/style.css">
+
+</head>
+<body>
+   <h1>Document Write</h1>
+
+   <p>Este método escreve diretamente na página HTML, usando tags HTML.</p>
+
+   <p><mark>OBS:</mark> De acordo com os padrões WEB, este método deve ser evidado.</p>
+
+   <p>O método <code>writeln()</code> é semelhante ao método <code>write()</code>, com a diferença que acrescenta um caractere de nova linha ao final do conteúdo inserido.</p>
+   
+   <pre>
+   &lt;script>
+   <mark>document.write</mark>("&lt;<b>h2</b>>O método &lt;<b>code</b>>write&lt;<b>/code></b>&lt;<b>/h2></b>>");
+
+   <mark>document.write</mark>("&lt;<b>p></b> método &lt;<b>code</b>> write&lt;<b>/code</b>> do objeto 
+   &lt;<b>code</b>>document&lt;<b>/code</b>> destina-se a escrever marcação HTML 
+   com uso da JavaScript.&lt;<b>/p></b>>");
+   &lt;/script> </pre>
+
+   <h3>Resultado do Exemplo acima</h3>
+
+   <script>
+   document.write("<h2>O método <code> write</code></h2>");
+
+   document.write("<p>O método <code> write</code> do objeto <code>document</code> destina-se a escrever marcação HTML co uso da JavaScript.</p>");
+   </script>
+
+</body>
+</html>
