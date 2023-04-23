@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hora do Dia</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <header>
+      <h1>Hora do Dia</h1>
+   </header>
+
+   <h4>Questionário</h4><br>
+
+   <section>
+      <div>
+         <form action="#">
+            <label for="inValor1">1º Valor: </label>
+            <input type="number" id="inValor1" name="inValor1" placeholder="1º Valor:" min="0" required><br><br>
+
+            <label for="inValor2">2º Valor: </label>
+            <input type="number" id="inValor2" name="inValor2" placeholder="2º Valor" min="0" required><br><br>
+
+            <!-- CRIA OS BOTÕES CALCULAR E LImPAR -->
+            <input type="submit" value="Calcular peso ideal">
+            <input type="reset" value="Limpar campos">
+         </form>
+      </div>
+
+      <hr>
+      
+      <div>
+         <h3>Exibe a Resposta</h3>
+         <p id="one"></p>
+         <p id="two"></p>
+         <p id="three"></p>
+         <p id="four"></p>
+         <p id="five"></p>
+         <p id="six"></p>
+         <p id="seven"></p>
+         <p id="eight"></p>
+      </div>
+
+      <script src="script.js"></script>
+   </section>
+   
+   <footer>
+      <p>&copy;cursoemvideo</p>
+   </footer>
+   
+</body>
+</html>
