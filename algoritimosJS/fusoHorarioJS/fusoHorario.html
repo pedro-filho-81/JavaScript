@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Fuso Horário</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <header>
+      <h1>Fuso Horário JavaScript</h1>
+   </header>
+
+   <h4>Questionário: a) Sabendo que o fuso horário da França em relação ao Brasil é de + 5 horas (no horário de verão na França), elaborar um programa que leia a hora no Brasil e informe a hora na França. <br>
+   Iepsen, Edécio Fernando. Lógica de Programação e Algoritmos com JavaScript - 2ª Edição (p. 113). Novatec Editora. Edição do Kindle. </h4><br>
+
+   <section>
+      <img src="globo_terrestre.jpeg" alt="Globo Terrestre">
+
+      <div>
+         <form action="#">
+            <label for="inHorasBrasil">Hora no Brasil (h.m): </label>
+            <input type="number" id="inHorasBrasil" name="inHorasBrasil" placeholder="Informe às horas no Brasil:" min="0" max="23.59" step="0.01" required><br><br>
+
+            <!-- CRIA OS BOTÕES SUBmIT E RESET "LImPAR" -->
+            <input type="submit" value="Exibir horas na França">
+            <input type="reset" value="Limpar campos">
+         </form>
+      </div>
+
+      <hr>
+      
+      <div>
+         <h3>Exibe a Resposta</h3>
+         <p id="one"></p>
+         <p id="two"></p>
+         <p id="three"></p>
+         <p id="four"></p>
+         <p id="five"></p>
+         <p id="six"></p>
+         <p id="seven"></p>
+         <p id="eight"></p>
+      </div>
+
+      <script src="script.js"></script>
+   </section>
+   
+   <footer>
+      <p>&copy; Lógica de Programação JavaScript</p>
+   </footer>
+   
+</body>
+</html>
