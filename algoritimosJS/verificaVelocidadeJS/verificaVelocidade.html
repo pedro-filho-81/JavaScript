@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Velocidade Controlada</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <header>
+      <h1>Velocidade Controlada</h1>
+   </header>
+
+   <h4>Questionário: b) Elaborar um programa que leia a velocidade permitida em uma estrada e a velocidade de um condutor. Se a velocidade for inferior ou igual à permitida, exiba “Sem Multa”. Se a velocidade for de até 20% maior que a permitida, exiba “Multa Leve”. E, se a velocidade for superior a 20% da velocidade permitida, exiba “Multa Grave” – conforme ilustra a Figura 4.8.
+   Iepsen, Edécio Fernando. Lógica de Programação e Algoritmos com JavaScript - 2ª Edição (p. 123). Novatec Editora. Edição do Kindle. </h4><br>
+
+   <section>
+      <div>
+         <form action="#">
+            <label for="inValor1">Velocidade Permitida: </label>
+            <input type="number" id="inValor1" name="inValor1" placeholder="Velocidade permitida:" min="0" required> <br><br>
+
+            <label for="inValor2">Velocidade do Condutor: </label>
+            <input type="number" id="inValor2" name="inValor2" placeholder="Velocidade do Condutor:" min="0" required> <br><br>
+
+            <!-- CRIA OS BOTÕES CALCULAR E LImPAR -->
+            <input type="submit" value="Verificar Velocidade">
+            <input type="reset" value="Limpar campos">
+         </form>
+      </div>
+
+      <hr>
+      
+      <div>
+         <h3>Exibe a Resposta</h3>
+         <p id="one"></p>
+         <p id="two"></p>
+         <p id="three"></p>
+         <p id="four"></p>
+         <p id="five"></p>
+         <p id="six"></p>
+         <p id="seven"></p>
+         <p id="eight"></p>
+      </div>
+
+      <script src="script.js"></script>
+   </section>
+   
+   <footer>
+      <p>&copy; Lógica de Programação</p>
+   </footer>
+   
+</body>
+</html>
