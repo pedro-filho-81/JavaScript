@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Potência de x</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <header>
+      <h1>Potência de x</h1>
+   </header>
+
+   <h4>Questionário:
+      3.7 Escreva instruções em C que:  <br>
+      a) leiam a variável inteira x com scanf. <br> 
+      b) leiam a variável inteira y com scanf.  <br>
+      c) inicializem a variável inteira i em 1.  <br>
+      d) inicializem a variável inteira potência em 1. <br>  
+      e) multipliquem a variável potência por x e atribua o  resultado à potência.  <br>
+      f) incrementem a variável i em 1.  <br>
+      g) testem i para verificar se ele é maior ou igual a y na  condição de uma estrutura while.  <br>
+      h) exibam a variável inteira potência com printf. <br>
+      Deitel, Paul; Deitel, Harvey. C  Como Programar (p. 71). Edição do Kindle. <br>
+      Pedro, 01/05/2023 </h4><br>
+
+   <section>
+      <div>
+         <form action="#">
+            <label for="inValor1">1º Valor: </label>
+            <input type="number" id="inValor1" name="inValor1" placeholder="1º Valor:" min="0" required><br><br>
+
+            <label for="inValor2">2º Valor: </label>
+            <input type="number" id="inValor2" name="inValor2" placeholder="2º Valor" min="0" required><br><br>
+
+            <!-- CRIA OS BOTÕES CALCULAR E LImPAR -->
+            <input type="submit" value="Calcular peso ideal">
+            <input type="reset" value="Limpar campos">
+         </form>
+      </div>
+
+      <hr>
+      
+      <div>
+         <h3>Exibe a(s) Resposta(s)</h3>
+         <p id="one"></p>
+         <p id="two"></p>
+         <p id="three"></p>
+      </div>
+
+      <script src="ex3_7.js"></script>
+   </section>
+   
+   <footer>
+      <p>&copy; C Como Programar</p>
+   </footer>
+   
+</body>
+</html>
