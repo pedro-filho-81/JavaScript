@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+   background-color: rgb(70, 142, 236);
+   font: normal 15pt Arial;
+}
+
+header {
+   color: white;
+   text-align: center;
+}
+
+h4 {
+   background-color: rgba(77, 91, 219, 0.825);
+   border-radius: 10px;
+   width: 500px;
+   text-align: center;
+   margin: auto;
+   padding: 15px;
+}
+
+p#copy  {
+   background-color: rgba(110, 169, 214, 0.711);
+   border-radius: 10px;
+   width: 500px;
+   text-align: justify;
+   margin: auto;
+   padding: 15px;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.447);
+}
+
+section {
+   background-color: white;
+   border-radius: 10px;
+   padding: 15px;
+   width: 500px;
+   margin: auto;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.467);
+}
+
+footer {
+   color: white;
+   text-align: center;
+   font-style: italic;
+}
