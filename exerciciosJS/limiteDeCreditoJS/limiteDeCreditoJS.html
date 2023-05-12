@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Limite de Crédito JS</title>
+
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <header>
+      <h1>Limite de Crédito JavaScript</h1>
+   </header>
+
+   <div id="question">
+      <h4>Questionário: </h4>
+      <p id="copy">3.18 Calculadora de limite de crédito. Desenvolva um  programa em C que determine se um cliente de uma  loja de departamentos excedeu seu limite de crédito. Os  seguintes fatos estão disponíveis para cada cliente:  <br>
+      a) Número de conta.  <br>
+      b) Saldo no início do mês.  <br>
+      c) Total de todos os encargos desse cliente nesse mês.  <br>
+      d) Total de todos os créditos aplicados à conta desse  cliente nesse mês. <br> e) Limite de crédito autorizado. <br>
+      O programa deverá ler cada um desses fatos, calcular o  novo saldo (= saldo inicial + encargos - créditos)  e determinar se o novo saldo é superior ao limite de  crédito do cliente. Para os clientes cujo limite de crédito foi ultrapassado, o programa deverá exibir o número  de conta do cliente, o limite de crédito, o novo saldo e  a mensagem ‘Limite de crédito ultrapassado’. Veja um  exemplo do diálogo de entrada/saída: 
+      Deitel, Paul; Deitel, Harvey. C  Como Programar (p. 74). Edição do Kindle. </p>
+   </div> <br>
+
+   <section>
+      <div>
+         <h3>Calculadora de Limite de Crédito:</h3>
+         <form action="#">
+            <label for="inValor1">Informe a conta: </label>
+            <input type="number" id="inValor1" name="inValor1" placeholder="Número da Conta:" min="0" required><br><br>
+
+            <label for="inValor2">Saldo inicial R$ </label>
+            <input type="number" id="inValor2" name="inValor2" placeholder="Saldo Inicial R$" min="0" step="0.01" required><br><br>
+
+            <label for="inValor3">Total de encargos R$ </label>
+            <input type="number" id="inValor3" name="inValor3" placeholder="Total de encargos R$" min="0" step="0.01" required><br><br>
+
+            <label for="inValor4">Total de crédito R$ </label>
+            <input type="number" id="inValor4" name="inValor4" placeholder="Total de crédito R$" min="0" step="0.01" required><br><br>
+
+            <label for="inValor5">Limite de crédito R$ </label>
+            <input type="number" id="inValor5" name="inValor5" placeholder="Limite de crédito R$" min="0" step="0.01" required><br><br>
+
+            <!-- CRIA OS BOTÕES CALCULAR E LImPAR -->
+            <input type="submit" value="Calcular">
+            <input type="reset" value="Limpar campos">
+         </form>
+      </div>
+
+      <hr>
+      
+      <div>
+         <h3>Exibe a(s) Resposta(s)</h3>
+         <p id="one"></p>
+         <p id="two"></p>
+         <p id="three"></p>
+         <p id="four"></p>
+         <p id="five"></p>
+      </div>
+
+      <script src="limiteDeCredito.js"></script>
+   </section>
+   
+   <footer>
+      <p>&copy; C Como Programar</p>
+   </footer>
+   
+</body>
+</html>
